@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    <title>corona plot</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0;
+        }
+
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        #info {
+            display: block;
+            position: relative;
+            margin: 0px auto;
+            width: 50%;
+            padding: 10px;
+            border: none;
+            border-radius: 3px;
+            font-size: 12px;
+            text-align: center;
+            color: #222;
+            background: #fff;
+        }
+        .mapboxgl-popup {
+max-width: 400px;
+font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+    </style>
+</head>
+
+<body>
+    <div id='map'></div>
+    <pre id="info"></pre>
+</body>
+
+
+<script src="index.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+
+<script>
+   
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FuZXNoc2FodTc4NiIsImEiOiJja21ocDk5M24wOWlyMm9tdGh6ODJocmNqIn0.AvWKkkVpxPEIwoEkMIbGGw';
+    var map = new mapboxgl.Map({
+     container: 'map',
+     style: 'mapbox://styles/mapbox/dark-v10'
+
+
+ });
+    
+   
+</script>
+
+
+
+
+
+
+</html>

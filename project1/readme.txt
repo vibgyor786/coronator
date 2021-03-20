@@ -1,0 +1,1 @@
+This folder contains our first project that is live corona virus plotting on world map.
