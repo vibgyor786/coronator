@@ -18,6 +18,11 @@
             height: 100vh;
         }
 
+        #map {
+            width: 100vw;
+            height: 100vh;
+        }
+
         #info {
             display: block;
             position: relative;
@@ -31,10 +36,11 @@
             color: #222;
             background: #fff;
         }
+
         .mapboxgl-popup {
-max-width: 400px;
-font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
-}
+            max-width: 400px;
+            font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+        }
     </style>
 </head>
 
@@ -48,16 +54,16 @@ font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
 <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
 
 <script>
-   
+
     mapboxgl.accessToken = 'pk.eyJ1IjoiZ2FuZXNoc2FodTc4NiIsImEiOiJja21ocDk5M24wOWlyMm9tdGh6ODJocmNqIn0.AvWKkkVpxPEIwoEkMIbGGw';
     var map = new mapboxgl.Map({
-     container: 'map',
-     style: 'mapbox://styles/mapbox/dark-v10'
+        container: 'map',
+        style: 'mapbox://styles/mapbox/dark-v10'
 
 
- });
-    
-   
+    });
+
+
 </script>
 
 
